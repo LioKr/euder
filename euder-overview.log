@@ -233,3 +233,23 @@
 2021-03-30 13:28:47.687  INFO 9048 --- [http-nio-8080-exec-1] c.s.e.api.controllers.UserController     : Inserting a new Customer with UUID 45a3308f-f6f6-4881-854d-e4cba58779b2
 2021-03-30 13:28:47.688  INFO 9048 --- [http-nio-8080-exec-1] c.s.euder.service.CustomerService        : Inserting one user
 2021-03-30 13:28:47.688  INFO 9048 --- [http-nio-8080-exec-1] c.s.euder.api.mappers.CustomerMapper     : Returning CustomerDtoCreate based on Customer entity
+2021-03-30 15:45:06.937  INFO 10876 --- [main] com.switchfully.euder.EuderApplication   : Starting EuderApplication using Java 15.0.2 on FIN-32L9TT2 with PID 10876 (C:\_development\switchfullyPractice\euder\target\classes started by lkrebs in C:\_development\switchfullyPractice\euder)
+2021-03-30 15:45:06.941 DEBUG 10876 --- [main] com.switchfully.euder.EuderApplication   : Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-30 15:45:06.942  INFO 10876 --- [main] com.switchfully.euder.EuderApplication   : No active profile set, falling back to default profiles: default
+2021-03-30 15:45:08.487  INFO 10876 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-30 15:45:08.498  INFO 10876 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-30 15:45:08.499  INFO 10876 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-30 15:45:08.588  INFO 10876 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-30 15:45:08.588  INFO 10876 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1539 ms
+2021-03-30 15:45:08.853  INFO 10876 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-30 15:45:09.692  INFO 10876 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-30 15:45:09.719  INFO 10876 --- [main] com.switchfully.euder.EuderApplication   : Started EuderApplication in 3.583 seconds (JVM running for 4.838)
+2021-03-30 15:45:14.561  INFO 10876 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-30 15:45:14.563  INFO 10876 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-03-30 15:45:14.567  INFO 10876 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2021-03-30 15:45:15.989  INFO 10876 --- [http-nio-8080-exec-7] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 484 ms
+2021-03-30 15:45:44.992  INFO 10876 --- [http-nio-8080-exec-8] c.s.e.api.controllers.ItemController     : Creating an Item
+2021-03-30 15:45:44.992  INFO 10876 --- [http-nio-8080-exec-8] c.s.euder.api.mappers.ItemMapper         : Returning Item entity based on ItemDtoCreate
+2021-03-30 15:45:44.993  INFO 10876 --- [http-nio-8080-exec-8] c.s.e.api.controllers.ItemController     : Inserting a new Item with UUID 15ec7f45-ff66-43ff-b5db-0998eebbb3c8
+2021-03-30 15:45:44.994  INFO 10876 --- [http-nio-8080-exec-8] c.switchfully.euder.service.ItemService  : Inserting one Item
+2021-03-30 15:45:44.994  INFO 10876 --- [http-nio-8080-exec-8] c.s.euder.api.mappers.ItemMapper         : Returning ItemDtoCreate based on Item entity
