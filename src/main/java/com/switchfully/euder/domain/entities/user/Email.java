@@ -1,17 +1,17 @@
-package com.switchfully.euder.domain.entities.customer;
+package com.switchfully.euder.domain.entities.user;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.switchfully.euder.infrastructure.exceptions.InvalidMailException;
+import com.switchfully.euder.infrastructure.utils.EmailValidator;
 
 public final class Email {
-    private static final String EMAIL_FORMAT = "^\\w+@\\w+\\.\\w+$";
     private final String mailAddress;
-
 
     @JsonCreator
     public Email(@JsonProperty("mailAddress") String mailAddress) {
-        if (!mailAddress.matches(EMAIL_FORMAT)) {
-            throw new IllegalArgumentException("Cannot create Email, invalid format provided");
+        if (!EmailValidator.isValidEmail(mailAddress)) {
+            throw new InvalidMailException("Cannot create Email: " + mailAddress + ", invalid format provided");
         }
         this.mailAddress = mailAddress;
     }

@@ -1,4 +1,4 @@
-package com.switchfully.euder.domain.entities.customer;
+package com.switchfully.euder.domain.entities.user;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;

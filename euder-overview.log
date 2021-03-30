@@ -1,0 +1,235 @@
+2021-03-30 11:54:05.103  INFO 11304 --- [main] c.s.euder.EuderApplicationTests          : Starting EuderApplicationTests using Java 15.0.2 on FIN-32L9TT2 with PID 11304 (started by lkrebs in C:\_development\switchfullyPractice\euder)
+2021-03-30 11:54:05.105 DEBUG 11304 --- [main] c.s.euder.EuderApplicationTests          : Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-30 11:54:05.107  INFO 11304 --- [main] c.s.euder.EuderApplicationTests          : No active profile set, falling back to default profiles: default
+2021-03-30 11:54:06.734  INFO 11304 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-30 11:54:07.819  INFO 11304 --- [main] c.s.euder.EuderApplicationTests          : Started EuderApplicationTests in 3.299 seconds (JVM running for 4.782)
+2021-03-30 11:54:08.495  INFO 11304 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-30 11:55:22.612  INFO 11156 --- [main] com.switchfully.euder.EuderApplication   : Starting EuderApplication using Java 15.0.2 on FIN-32L9TT2 with PID 11156 (C:\_development\switchfullyPractice\euder\target\classes started by lkrebs in C:\_development\switchfullyPractice\euder)
+2021-03-30 11:55:22.644 DEBUG 11156 --- [main] com.switchfully.euder.EuderApplication   : Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-30 11:55:22.647  INFO 11156 --- [main] com.switchfully.euder.EuderApplication   : No active profile set, falling back to default profiles: default
+2021-03-30 11:55:23.922  INFO 11156 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-30 11:55:23.932  INFO 11156 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-30 11:55:23.932  INFO 11156 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-30 11:55:23.999  INFO 11156 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-30 11:55:23.999  INFO 11156 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1214 ms
+2021-03-30 11:55:24.234  INFO 11156 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-30 11:55:24.971  INFO 11156 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-30 11:55:24.984  INFO 11156 --- [main] com.switchfully.euder.EuderApplication   : Started EuderApplication in 3.13 seconds (JVM running for 4.534)
+2021-03-30 11:55:57.825  INFO 11156 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-30 11:55:57.828  INFO 11156 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-03-30 11:55:57.842  INFO 11156 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2021-03-30 11:56:00.344  INFO 11156 --- [http-nio-8080-exec-7] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 751 ms
+2021-03-30 11:58:11.628  WARN 11156 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot construct instance of `com.switchfully.euder.domain.entities.user.Email` (although at least one Creator exists): cannot deserialize from Object value (no delegate- or property-based Creator); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `com.switchfully.euder.domain.entities.user.Email` (although at least one Creator exists): cannot deserialize from Object value (no delegate- or property-based Creator)
+ at [Source: (PushbackInputStream); line: 1, column: 52] (through reference chain: com.switchfully.euder.api.dtos.CustomerDtoCreate["email"])]
+2021-03-30 12:04:29.182  WARN 11156 --- [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot construct instance of `com.switchfully.euder.domain.entities.user.Email` (although at least one Creator exists): cannot deserialize from Object value (no delegate- or property-based Creator); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `com.switchfully.euder.domain.entities.user.Email` (although at least one Creator exists): cannot deserialize from Object value (no delegate- or property-based Creator)
+ at [Source: (PushbackInputStream); line: 1, column: 52] (through reference chain: com.switchfully.euder.api.dtos.CustomerDtoCreate["email"])]
+2021-03-30 13:05:55.833  INFO 10600 --- [main] com.switchfully.euder.EuderApplication   : Starting EuderApplication using Java 15.0.2 on FIN-32L9TT2 with PID 10600 (C:\_development\switchfullyPractice\euder\target\classes started by lkrebs in C:\_development\switchfullyPractice\euder)
+2021-03-30 13:05:55.837 DEBUG 10600 --- [main] com.switchfully.euder.EuderApplication   : Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-30 13:05:55.839  INFO 10600 --- [main] com.switchfully.euder.EuderApplication   : No active profile set, falling back to default profiles: default
+2021-03-30 13:05:57.539  INFO 10600 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-30 13:05:57.548  INFO 10600 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-30 13:05:57.549  INFO 10600 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-30 13:05:57.620  INFO 10600 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-30 13:05:57.620  INFO 10600 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1545 ms
+2021-03-30 13:05:57.914  INFO 10600 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-30 13:05:58.617  INFO 10600 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-30 13:05:58.630  INFO 10600 --- [main] com.switchfully.euder.EuderApplication   : Started EuderApplication in 3.471 seconds (JVM running for 4.613)
+2021-03-30 13:07:14.884  INFO 10600 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-30 13:07:14.895  INFO 10600 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-03-30 13:07:14.910  INFO 10600 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2021-03-30 13:07:16.894  INFO 10600 --- [http-nio-8080-exec-6] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 594 ms
+2021-03-30 13:09:37.205  INFO 2144 --- [main] com.switchfully.euder.EuderApplication   : Starting EuderApplication using Java 15.0.2 on FIN-32L9TT2 with PID 2144 (C:\_development\switchfullyPractice\euder\target\classes started by lkrebs in C:\_development\switchfullyPractice\euder)
+2021-03-30 13:09:37.208 DEBUG 2144 --- [main] com.switchfully.euder.EuderApplication   : Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-30 13:09:37.210  INFO 2144 --- [main] com.switchfully.euder.EuderApplication   : No active profile set, falling back to default profiles: default
+2021-03-30 13:09:38.598  INFO 2144 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-30 13:09:38.610  INFO 2144 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-30 13:09:38.611  INFO 2144 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-30 13:09:38.689  INFO 2144 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-30 13:09:38.689  INFO 2144 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1395 ms
+2021-03-30 13:09:39.042  INFO 2144 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-30 13:09:40.100  INFO 2144 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-30 13:09:40.117  INFO 2144 --- [main] com.switchfully.euder.EuderApplication   : Started EuderApplication in 3.79 seconds (JVM running for 5.582)
+2021-03-30 13:09:43.724  INFO 2144 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-30 13:09:43.725  INFO 2144 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-03-30 13:09:43.726  INFO 2144 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-03-30 13:09:45.466  INFO 2144 --- [http-nio-8080-exec-6] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 546 ms
+2021-03-30 13:10:50.905  INFO 244 --- [main] com.switchfully.euder.EuderApplication   : Starting EuderApplication using Java 15.0.2 on FIN-32L9TT2 with PID 244 (C:\_development\switchfullyPractice\euder\target\classes started by lkrebs in C:\_development\switchfullyPractice\euder)
+2021-03-30 13:10:50.909 DEBUG 244 --- [main] com.switchfully.euder.EuderApplication   : Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-30 13:10:50.910  INFO 244 --- [main] com.switchfully.euder.EuderApplication   : No active profile set, falling back to default profiles: default
+2021-03-30 13:10:52.225  INFO 244 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-30 13:10:52.237  INFO 244 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-30 13:10:52.238  INFO 244 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-30 13:10:52.310  INFO 244 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-30 13:10:52.311  INFO 244 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1298 ms
+2021-03-30 13:10:52.580  INFO 244 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-30 13:10:53.207  INFO 244 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-30 13:10:53.218  INFO 244 --- [main] com.switchfully.euder.EuderApplication   : Started EuderApplication in 3.039 seconds (JVM running for 4.183)
+2021-03-30 13:11:06.726  INFO 244 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-30 13:11:06.727  INFO 244 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-03-30 13:11:06.727  INFO 244 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-03-30 13:11:08.647  INFO 244 --- [http-nio-8080-exec-6] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 613 ms
+2021-03-30 13:11:19.109  WARN 244 --- [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot construct instance of `com.switchfully.euder.domain.entities.user.Email` (although at least one Creator exists): cannot deserialize from Object value (no delegate- or property-based Creator); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `com.switchfully.euder.domain.entities.user.Email` (although at least one Creator exists): cannot deserialize from Object value (no delegate- or property-based Creator)
+ at [Source: (PushbackInputStream); line: 1, column: 52] (through reference chain: com.switchfully.euder.api.dtos.CustomerDtoCreate["email"])]
+2021-03-30 13:12:22.622  INFO 8528 --- [main] com.switchfully.euder.EuderApplication   : Starting EuderApplication using Java 15.0.2 on FIN-32L9TT2 with PID 8528 (C:\_development\switchfullyPractice\euder\target\classes started by lkrebs in C:\_development\switchfullyPractice\euder)
+2021-03-30 13:12:22.626 DEBUG 8528 --- [main] com.switchfully.euder.EuderApplication   : Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-30 13:12:22.626  INFO 8528 --- [main] com.switchfully.euder.EuderApplication   : No active profile set, falling back to default profiles: default
+2021-03-30 13:12:23.738  INFO 8528 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-30 13:12:23.747  INFO 8528 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-30 13:12:23.747  INFO 8528 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-30 13:12:23.818  INFO 8528 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-30 13:12:23.818  INFO 8528 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1122 ms
+2021-03-30 13:12:24.073  INFO 8528 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-30 13:12:24.680  INFO 8528 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-30 13:12:24.691  INFO 8528 --- [main] com.switchfully.euder.EuderApplication   : Started EuderApplication in 2.718 seconds (JVM running for 3.88)
+2021-03-30 13:12:34.081  INFO 8528 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-30 13:12:34.081  INFO 8528 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-03-30 13:12:34.088  INFO 8528 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2021-03-30 13:12:35.862  INFO 8528 --- [http-nio-8080-exec-6] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 414 ms
+2021-03-30 13:12:43.144  WARN 8528 --- [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot construct instance of `com.switchfully.euder.domain.entities.user.Email` (although at least one Creator exists): cannot deserialize from Object value (no delegate- or property-based Creator); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `com.switchfully.euder.domain.entities.user.Email` (although at least one Creator exists): cannot deserialize from Object value (no delegate- or property-based Creator)
+ at [Source: (PushbackInputStream); line: 1, column: 52] (through reference chain: com.switchfully.euder.api.dtos.CustomerDtoCreate["email"])]
+2021-03-30 13:16:05.134  INFO 9752 --- [main] com.switchfully.euder.EuderApplication   : Starting EuderApplication using Java 15.0.2 on FIN-32L9TT2 with PID 9752 (C:\_development\switchfullyPractice\euder\target\classes started by lkrebs in C:\_development\switchfullyPractice\euder)
+2021-03-30 13:16:05.138 DEBUG 9752 --- [main] com.switchfully.euder.EuderApplication   : Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-30 13:16:05.139  INFO 9752 --- [main] com.switchfully.euder.EuderApplication   : No active profile set, falling back to default profiles: default
+2021-03-30 13:16:06.239  INFO 9752 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-30 13:16:06.251  INFO 9752 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-30 13:16:06.251  INFO 9752 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-30 13:16:06.320  INFO 9752 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-30 13:16:06.320  INFO 9752 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1106 ms
+2021-03-30 13:16:06.647  INFO 9752 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-30 13:16:07.288  INFO 9752 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-30 13:16:07.299  INFO 9752 --- [main] com.switchfully.euder.EuderApplication   : Started EuderApplication in 2.776 seconds (JVM running for 3.875)
+2021-03-30 13:16:31.716  INFO 9752 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-30 13:16:31.716  INFO 9752 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-03-30 13:16:31.718  INFO 9752 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-03-30 13:16:31.949  WARN 9752 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot construct instance of `com.switchfully.euder.domain.entities.user.Email` (although at least one Creator exists): cannot deserialize from Object value (no delegate- or property-based Creator); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `com.switchfully.euder.domain.entities.user.Email` (although at least one Creator exists): cannot deserialize from Object value (no delegate- or property-based Creator)
+ at [Source: (PushbackInputStream); line: 1, column: 52] (through reference chain: com.switchfully.euder.api.dtos.CustomerDtoCreate["email"])]
+2021-03-30 13:20:58.831  INFO 4400 --- [main] com.switchfully.euder.EuderApplication   : Starting EuderApplication using Java 15.0.2 on FIN-32L9TT2 with PID 4400 (C:\_development\switchfullyPractice\euder\target\classes started by lkrebs in C:\_development\switchfullyPractice\euder)
+2021-03-30 13:20:58.835 DEBUG 4400 --- [main] com.switchfully.euder.EuderApplication   : Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-30 13:20:58.836  INFO 4400 --- [main] com.switchfully.euder.EuderApplication   : No active profile set, falling back to default profiles: default
+2021-03-30 13:21:00.234  INFO 4400 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-30 13:21:00.247  INFO 4400 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-30 13:21:00.247  INFO 4400 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-30 13:21:00.327  INFO 4400 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-30 13:21:00.327  INFO 4400 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1387 ms
+2021-03-30 13:21:00.597  INFO 4400 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-30 13:21:01.224  INFO 4400 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-30 13:21:01.234  INFO 4400 --- [main] com.switchfully.euder.EuderApplication   : Started EuderApplication in 3.031 seconds (JVM running for 4.289)
+2021-03-30 13:21:06.298  INFO 4400 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-30 13:21:06.299  INFO 4400 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-03-30 13:21:06.300  INFO 4400 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-03-30 13:21:06.448  WARN 4400 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot construct instance of `com.switchfully.euder.domain.entities.user.Email` (although at least one Creator exists): cannot deserialize from Object value (no delegate- or property-based Creator); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `com.switchfully.euder.domain.entities.user.Email` (although at least one Creator exists): cannot deserialize from Object value (no delegate- or property-based Creator)
+ at [Source: (PushbackInputStream); line: 1, column: 52] (through reference chain: com.switchfully.euder.api.dtos.CustomerDtoCreate["email"])]
+2021-03-30 13:21:55.543  WARN 4400 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot construct instance of `com.switchfully.euder.domain.entities.user.Email` (although at least one Creator exists): cannot deserialize from Object value (no delegate- or property-based Creator); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `com.switchfully.euder.domain.entities.user.Email` (although at least one Creator exists): cannot deserialize from Object value (no delegate- or property-based Creator)
+ at [Source: (PushbackInputStream); line: 1, column: 52] (through reference chain: com.switchfully.euder.api.dtos.CustomerDtoCreate["email"])]
+2021-03-30 13:21:57.681  WARN 4400 --- [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot construct instance of `com.switchfully.euder.domain.entities.user.Email` (although at least one Creator exists): cannot deserialize from Object value (no delegate- or property-based Creator); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `com.switchfully.euder.domain.entities.user.Email` (although at least one Creator exists): cannot deserialize from Object value (no delegate- or property-based Creator)
+ at [Source: (PushbackInputStream); line: 1, column: 52] (through reference chain: com.switchfully.euder.api.dtos.CustomerDtoCreate["email"])]
+2021-03-30 13:21:58.402  WARN 4400 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot construct instance of `com.switchfully.euder.domain.entities.user.Email` (although at least one Creator exists): cannot deserialize from Object value (no delegate- or property-based Creator); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `com.switchfully.euder.domain.entities.user.Email` (although at least one Creator exists): cannot deserialize from Object value (no delegate- or property-based Creator)
+ at [Source: (PushbackInputStream); line: 1, column: 52] (through reference chain: com.switchfully.euder.api.dtos.CustomerDtoCreate["email"])]
+2021-03-30 13:21:59.097  WARN 4400 --- [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot construct instance of `com.switchfully.euder.domain.entities.user.Email` (although at least one Creator exists): cannot deserialize from Object value (no delegate- or property-based Creator); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `com.switchfully.euder.domain.entities.user.Email` (although at least one Creator exists): cannot deserialize from Object value (no delegate- or property-based Creator)
+ at [Source: (PushbackInputStream); line: 1, column: 52] (through reference chain: com.switchfully.euder.api.dtos.CustomerDtoCreate["email"])]
+2021-03-30 13:22:57.896  INFO 13092 --- [main] com.switchfully.euder.EuderApplication   : Starting EuderApplication using Java 15.0.2 on FIN-32L9TT2 with PID 13092 (C:\_development\switchfullyPractice\euder\target\classes started by lkrebs in C:\_development\switchfullyPractice\euder)
+2021-03-30 13:22:57.900 DEBUG 13092 --- [main] com.switchfully.euder.EuderApplication   : Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-30 13:22:57.901  INFO 13092 --- [main] com.switchfully.euder.EuderApplication   : No active profile set, falling back to default profiles: default
+2021-03-30 13:22:58.998  INFO 13092 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-30 13:22:59.009  INFO 13092 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-30 13:22:59.010  INFO 13092 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-30 13:22:59.086  INFO 13092 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-30 13:22:59.087  INFO 13092 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1113 ms
+2021-03-30 13:22:59.476  INFO 13092 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-30 13:23:00.189  INFO 13092 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-30 13:23:00.200  INFO 13092 --- [main] com.switchfully.euder.EuderApplication   : Started EuderApplication in 2.933 seconds (JVM running for 4.053)
+2021-03-30 13:23:08.753  INFO 13092 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-30 13:23:08.758  INFO 13092 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-03-30 13:23:08.764  INFO 13092 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2021-03-30 13:23:08.917  WARN 13092 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot construct instance of `com.switchfully.euder.domain.entities.user.Email`, problem: Cannot invoke "String.matches(String)" because "mailAddress" is null; nested exception is com.fasterxml.jackson.databind.exc.ValueInstantiationException: Cannot construct instance of `com.switchfully.euder.domain.entities.user.Email`, problem: Cannot invoke "String.matches(String)" because "mailAddress" is null
+ at [Source: (PushbackInputStream); line: 1, column: 82] (through reference chain: com.switchfully.euder.api.dtos.CustomerDtoCreate["email"])]
+2021-03-30 13:23:55.500  INFO 9520 --- [main] com.switchfully.euder.EuderApplication   : Starting EuderApplication using Java 15.0.2 on FIN-32L9TT2 with PID 9520 (C:\_development\switchfullyPractice\euder\target\classes started by lkrebs in C:\_development\switchfullyPractice\euder)
+2021-03-30 13:23:55.504 DEBUG 9520 --- [main] com.switchfully.euder.EuderApplication   : Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-30 13:23:55.505  INFO 9520 --- [main] com.switchfully.euder.EuderApplication   : No active profile set, falling back to default profiles: default
+2021-03-30 13:23:56.659  INFO 9520 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-30 13:23:56.671  INFO 9520 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-30 13:23:56.672  INFO 9520 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-30 13:23:56.746  INFO 9520 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-30 13:23:56.747  INFO 9520 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1159 ms
+2021-03-30 13:23:56.995  INFO 9520 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-30 13:23:57.624  INFO 9520 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-30 13:23:57.638  INFO 9520 --- [main] com.switchfully.euder.EuderApplication   : Started EuderApplication in 2.81 seconds (JVM running for 3.94)
+2021-03-30 13:24:01.645  INFO 9520 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-30 13:24:01.646  INFO 9520 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-03-30 13:24:01.648  INFO 9520 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-03-30 13:24:02.018  WARN 9520 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot construct instance of `com.switchfully.euder.domain.entities.user.PhoneNumber` (although at least one Creator exists): cannot deserialize from Object value (no delegate- or property-based Creator); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `com.switchfully.euder.domain.entities.user.PhoneNumber` (although at least one Creator exists): cannot deserialize from Object value (no delegate- or property-based Creator)
+ at [Source: (PushbackInputStream); line: 1, column: 193] (through reference chain: com.switchfully.euder.api.dtos.CustomerDtoCreate["phoneNumber"])]
+2021-03-30 13:24:47.186  INFO 10292 --- [main] com.switchfully.euder.EuderApplication   : Starting EuderApplication using Java 15.0.2 on FIN-32L9TT2 with PID 10292 (C:\_development\switchfullyPractice\euder\target\classes started by lkrebs in C:\_development\switchfullyPractice\euder)
+2021-03-30 13:24:47.189 DEBUG 10292 --- [main] com.switchfully.euder.EuderApplication   : Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-30 13:24:47.190  INFO 10292 --- [main] com.switchfully.euder.EuderApplication   : No active profile set, falling back to default profiles: default
+2021-03-30 13:24:48.378  INFO 10292 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-30 13:24:48.387  INFO 10292 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-30 13:24:48.387  INFO 10292 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-30 13:24:48.465  INFO 10292 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-30 13:24:48.465  INFO 10292 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1199 ms
+2021-03-30 13:24:48.721  INFO 10292 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-30 13:24:49.354  INFO 10292 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-30 13:24:49.366  INFO 10292 --- [main] com.switchfully.euder.EuderApplication   : Started EuderApplication in 2.829 seconds (JVM running for 3.889)
+2021-03-30 13:24:52.200  INFO 10292 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-30 13:24:52.200  INFO 10292 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-03-30 13:24:52.201  INFO 10292 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-03-30 13:24:52.404  WARN 10292 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot construct instance of `com.switchfully.euder.domain.entities.user.PhoneNumber` (although at least one Creator exists): cannot deserialize from Object value (no delegate- or property-based Creator); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `com.switchfully.euder.domain.entities.user.PhoneNumber` (although at least one Creator exists): cannot deserialize from Object value (no delegate- or property-based Creator)
+ at [Source: (PushbackInputStream); line: 1, column: 193] (through reference chain: com.switchfully.euder.api.dtos.CustomerDtoCreate["phoneNumber"])]
+2021-03-30 13:26:16.898  INFO 7916 --- [main] com.switchfully.euder.EuderApplication   : Starting EuderApplication using Java 15.0.2 on FIN-32L9TT2 with PID 7916 (C:\_development\switchfullyPractice\euder\target\classes started by lkrebs in C:\_development\switchfullyPractice\euder)
+2021-03-30 13:26:16.902 DEBUG 7916 --- [main] com.switchfully.euder.EuderApplication   : Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-30 13:26:16.903  INFO 7916 --- [main] com.switchfully.euder.EuderApplication   : No active profile set, falling back to default profiles: default
+2021-03-30 13:26:18.084  INFO 7916 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-30 13:26:18.094  INFO 7916 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-30 13:26:18.095  INFO 7916 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-30 13:26:18.166  INFO 7916 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-30 13:26:18.167  INFO 7916 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1177 ms
+2021-03-30 13:26:18.420  INFO 7916 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-30 13:26:19.082  INFO 7916 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-30 13:26:19.094  INFO 7916 --- [main] com.switchfully.euder.EuderApplication   : Started EuderApplication in 2.86 seconds (JVM running for 4.124)
+2021-03-30 13:26:22.283  INFO 7916 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-30 13:26:22.285  INFO 7916 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-03-30 13:26:22.294  INFO 7916 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2021-03-30 13:26:22.586  WARN 7916 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot construct instance of `com.switchfully.euder.domain.entities.user.PhoneNumber` (although at least one Creator exists): cannot deserialize from Object value (no delegate- or property-based Creator); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `com.switchfully.euder.domain.entities.user.PhoneNumber` (although at least one Creator exists): cannot deserialize from Object value (no delegate- or property-based Creator)
+ at [Source: (PushbackInputStream); line: 1, column: 193] (through reference chain: com.switchfully.euder.api.dtos.CustomerDtoCreate["phoneNumber"])]
+2021-03-30 13:27:15.338  INFO 3932 --- [main] com.switchfully.euder.EuderApplication   : Starting EuderApplication using Java 15.0.2 on FIN-32L9TT2 with PID 3932 (C:\_development\switchfullyPractice\euder\target\classes started by lkrebs in C:\_development\switchfullyPractice\euder)
+2021-03-30 13:27:15.351 DEBUG 3932 --- [main] com.switchfully.euder.EuderApplication   : Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-30 13:27:15.352  INFO 3932 --- [main] com.switchfully.euder.EuderApplication   : No active profile set, falling back to default profiles: default
+2021-03-30 13:27:17.200  INFO 3932 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-30 13:27:17.210  INFO 3932 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-30 13:27:17.211  INFO 3932 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-30 13:27:17.287  INFO 3932 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-30 13:27:17.287  INFO 3932 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1785 ms
+2021-03-30 13:27:17.542  INFO 3932 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-30 13:27:18.212  INFO 3932 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-30 13:27:18.223  INFO 3932 --- [main] com.switchfully.euder.EuderApplication   : Started EuderApplication in 4.5 seconds (JVM running for 6.319)
+2021-03-30 13:27:21.900  INFO 3932 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-30 13:27:21.901  INFO 3932 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-03-30 13:27:21.903  INFO 3932 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-03-30 13:27:22.058  WARN 3932 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot construct instance of `com.switchfully.euder.domain.entities.user.PhoneNumber`, problem: Cannot create phone number, invalid format; nested exception is com.fasterxml.jackson.databind.exc.ValueInstantiationException: Cannot construct instance of `com.switchfully.euder.domain.entities.user.PhoneNumber`, problem: Cannot create phone number, invalid format
+ at [Source: (PushbackInputStream); line: 1, column: 215] (through reference chain: com.switchfully.euder.api.dtos.CustomerDtoCreate["phoneNumber"])]
+2021-03-30 13:27:32.434  WARN 3932 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot construct instance of `com.switchfully.euder.domain.entities.user.PhoneNumber`, problem: Cannot create phone number, invalid format; nested exception is com.fasterxml.jackson.databind.exc.ValueInstantiationException: Cannot construct instance of `com.switchfully.euder.domain.entities.user.PhoneNumber`, problem: Cannot create phone number, invalid format
+ at [Source: (PushbackInputStream); line: 1, column: 215] (through reference chain: com.switchfully.euder.api.dtos.CustomerDtoCreate["phoneNumber"])]
+2021-03-30 13:28:10.698  INFO 3932 --- [http-nio-8080-exec-3] c.s.e.api.controllers.UserController     : Creating a Customer
+2021-03-30 13:28:10.699  INFO 3932 --- [http-nio-8080-exec-3] c.s.euder.api.mappers.CustomerMapper     : Returning Customer entity based on CustomerDtoCreate
+2021-03-30 13:28:10.702  INFO 3932 --- [http-nio-8080-exec-3] c.s.e.api.controllers.UserController     : Inserting a new Customer with UUID 1347a43b-b4a6-44b4-9fe2-eb588c666630
+2021-03-30 13:28:10.702  INFO 3932 --- [http-nio-8080-exec-3] c.s.euder.service.CustomerService        : Inserting one user
+2021-03-30 13:28:10.702  INFO 3932 --- [http-nio-8080-exec-3] c.s.euder.api.mappers.CustomerMapper     : Returning CustomerDtoCreate based on Customer entity
+2021-03-30 13:28:41.764  INFO 9048 --- [main] com.switchfully.euder.EuderApplication   : Starting EuderApplication using Java 15.0.2 on FIN-32L9TT2 with PID 9048 (C:\_development\switchfullyPractice\euder\target\classes started by lkrebs in C:\_development\switchfullyPractice\euder)
+2021-03-30 13:28:41.767 DEBUG 9048 --- [main] com.switchfully.euder.EuderApplication   : Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-30 13:28:41.769  INFO 9048 --- [main] com.switchfully.euder.EuderApplication   : No active profile set, falling back to default profiles: default
+2021-03-30 13:28:42.904  INFO 9048 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-30 13:28:42.916  INFO 9048 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-30 13:28:42.916  INFO 9048 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-30 13:28:42.991  INFO 9048 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-30 13:28:42.992  INFO 9048 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1136 ms
+2021-03-30 13:28:43.250  INFO 9048 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-30 13:28:43.917  INFO 9048 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-30 13:28:43.927  INFO 9048 --- [main] com.switchfully.euder.EuderApplication   : Started EuderApplication in 2.804 seconds (JVM running for 3.938)
+2021-03-30 13:28:47.304  INFO 9048 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-30 13:28:47.304  INFO 9048 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-03-30 13:28:47.305  INFO 9048 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-03-30 13:28:47.685  INFO 9048 --- [http-nio-8080-exec-1] c.s.e.api.controllers.UserController     : Creating a Customer
+2021-03-30 13:28:47.686  INFO 9048 --- [http-nio-8080-exec-1] c.s.euder.api.mappers.CustomerMapper     : Returning Customer entity based on CustomerDtoCreate
+2021-03-30 13:28:47.687  INFO 9048 --- [http-nio-8080-exec-1] c.s.e.api.controllers.UserController     : Inserting a new Customer with UUID 45a3308f-f6f6-4881-854d-e4cba58779b2
+2021-03-30 13:28:47.688  INFO 9048 --- [http-nio-8080-exec-1] c.s.euder.service.CustomerService        : Inserting one user
+2021-03-30 13:28:47.688  INFO 9048 --- [http-nio-8080-exec-1] c.s.euder.api.mappers.CustomerMapper     : Returning CustomerDtoCreate based on Customer entity

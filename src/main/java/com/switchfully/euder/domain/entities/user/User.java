@@ -1,18 +1,19 @@
-package com.switchfully.euder.domain.entities.customer;
+package com.switchfully.euder.domain.entities.user;
 
 import java.util.UUID;
 
-public class Customer {
+public class User {
     private final UUID id;
     private final String firstname;
     private final String lastname;
     private final Email email;
     private final Address address;
     private final PhoneNumber phoneNumber;
+    private final Role role;
 
-    public Customer(String firstname, String lastname, Email email, Address address, PhoneNumber phoneNumber) {
-        if (!isValidCustomer(firstname, lastname, email, address, phoneNumber)) {
-            throw new IllegalArgumentException("Cannot create Customer, illegal argument provided.");
+    public User(String firstname, String lastname, Email email, Address address, PhoneNumber phoneNumber, Role role) {
+        if (!isValidUser(firstname, lastname, email, address, phoneNumber, role)) {
+            throw new IllegalArgumentException("Cannot create User, illegal argument provided.");
         }
         this.id = UUID.randomUUID();
         this.firstname = firstname;
@@ -20,14 +21,16 @@ public class Customer {
         this.email = email;
         this.address = address;
         this.phoneNumber = phoneNumber;
+        this.role = role;
     }
 
-    private boolean isValidCustomer(String firstname, String lastname, Email email, Address address, PhoneNumber phoneNumber) {
+    private boolean isValidUser(String firstname, String lastname, Email email, Address address, PhoneNumber phoneNumber, Role role) {
         return firstname != null
                 && lastname != null
                 && email != null
                 && address != null
-                && phoneNumber != null;
+                && phoneNumber != null
+                && role != null;
     }
 
     public UUID getId() {

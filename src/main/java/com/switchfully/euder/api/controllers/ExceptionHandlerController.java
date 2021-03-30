@@ -1,5 +1,6 @@
 package com.switchfully.euder.api.controllers;
 
+import com.switchfully.euder.infrastructure.exceptions.InvalidMailException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -19,5 +20,10 @@ public class ExceptionHandlerController extends ResponseEntityExceptionHandler {
         response.sendError(HttpServletResponse.SC_BAD_REQUEST, exception.getMessage());
     }
 
+    @ExceptionHandler
+    public void handleInvalidMailException(InvalidMailException exception, HttpServletResponse response) throws IOException {
+        LOGGER.warn(exception.getMessage(), exception);
+        response.sendError(HttpServletResponse.SC_BAD_REQUEST, exception.getMessage());
+    }
 
 }

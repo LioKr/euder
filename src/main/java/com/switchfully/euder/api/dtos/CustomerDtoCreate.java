@@ -1,8 +1,8 @@
 package com.switchfully.euder.api.dtos;
 
-import com.switchfully.euder.domain.entities.customer.Address;
-import com.switchfully.euder.domain.entities.customer.Email;
-import com.switchfully.euder.domain.entities.customer.PhoneNumber;
+import com.switchfully.euder.domain.entities.user.Address;
+import com.switchfully.euder.domain.entities.user.Email;
+import com.switchfully.euder.domain.entities.user.PhoneNumber;
 
 public class CustomerDtoCreate {
 
@@ -11,7 +11,6 @@ public class CustomerDtoCreate {
     private Email email;
     private Address address;
     private PhoneNumber phoneNumber;
-
 
     public CustomerDtoCreate setFirstname(String firstname) {
         this.firstname = firstname;
