@@ -24,7 +24,7 @@ public class ItemController {
         this.itemMapper = itemMapper;
     }
 
-
+    //TODO add Admin access restriction
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseStatus(HttpStatus.CREATED)
     public ItemDtoCreate createItem(@RequestBody ItemDtoCreate itemDtoCreate) {

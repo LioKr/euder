@@ -2,9 +2,7 @@ package com.switchfully.euder.domain.entities.user;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
-
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import com.switchfully.euder.infrastructure.utils.PhoneNumberValidator;
 
 public final class PhoneNumber {
     private final String phoneNumber;
@@ -20,13 +18,7 @@ public final class PhoneNumber {
         if (phoneNumber == null) {
             return false;
         }
-
-        String patterns =
-                "^((?:\\+|00)[17](?: |\\-)?|(?:\\+|00)[1-9]\\d{0,2}(?: |\\-)?|(?:\\+|00)1\\-\\d{3}(?: |\\-)?)?(0\\d|\\([0-9]{3}\\)|[1-9]{0,3})(?:((?: |\\-)[0-9]{2}){4}|((?:[0-9]{2}){4})|((?: |\\-)[0-9]{3}(?: |\\-)[0-9]{4})|([0-9]{7}))";
-
-        Pattern pattern = Pattern.compile(patterns);
-        Matcher matcher = pattern.matcher(phoneNumber);
-        return matcher.matches();
+        return PhoneNumberValidator.isValidPhoneNumber(phoneNumber);
     }
 
     public String getPhoneNumber() {

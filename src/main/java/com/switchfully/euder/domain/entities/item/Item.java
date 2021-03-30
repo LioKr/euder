@@ -3,6 +3,7 @@ package com.switchfully.euder.domain.entities.item;
 import com.switchfully.euder.infrastructure.exceptions.InvalidItemAmountInStockException;
 import com.switchfully.euder.infrastructure.exceptions.InvalidItemDescriptionException;
 import com.switchfully.euder.infrastructure.exceptions.InvalidItemNameException;
+import com.switchfully.euder.infrastructure.exceptions.InvalidItemPriceException;
 
 import java.util.UUID;
 
@@ -19,7 +20,7 @@ public class Item {
         this.id = UUID.randomUUID();
         this.name = validName(name);
         this.description = validDescription(description);
-        this.priceInEuros = priceInEuros;
+        this.priceInEuros = validPrice(priceInEuros);
         this.amountInStock = validAmountInStock(amountInStock);
     }
 
@@ -41,6 +42,13 @@ public class Item {
             throw new InvalidItemDescriptionException("Cannot create Description for Item, illegal argument provided: " + description);
         }
         return description;
+    }
+
+    private PriceInEuros validPrice(PriceInEuros priceInEuros) {
+        if (priceInEuros.getPrice() <= 0.0) {
+            throw new InvalidItemPriceException("Cannot create Price for Item, illegal argument provided: " + priceInEuros.getPrice());
+        }
+        return priceInEuros;
     }
 
     private int validAmountInStock(int amountInStock) {
