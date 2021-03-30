@@ -12,7 +12,7 @@ import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping(path = "/user", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+@RequestMapping(path = "/user")
 public class UserController {
     private static final Logger LOGGER = LoggerFactory.getLogger(UserController.class);
     private final CustomerService customerService;
@@ -24,12 +24,12 @@ public class UserController {
         this.customerMapper = customerMapper;
     }
 
-    @PostMapping
+    @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseStatus(HttpStatus.CREATED)
     public CustomerDtoCreate createCustomer(@RequestBody CustomerDtoCreate customerDtoCreate){
         LOGGER.info("Creating a Customer");
         Customer customerToInsert = customerMapper.toEntity(customerDtoCreate);
-        LOGGER.info("Inserting a new book with UUID "+ customerToInsert.getId());
+        LOGGER.info("Inserting a new Customer with UUID " + customerToInsert.getId());
         return customerMapper.toDto(customerService.createCustomer(customerToInsert));
     }
 }

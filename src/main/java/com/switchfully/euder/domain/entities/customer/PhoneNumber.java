@@ -1,12 +1,16 @@
 package com.switchfully.euder.domain.entities.customer;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public final class PhoneNumber {
     private final String phoneNumber;
 
-    public PhoneNumber(String phoneNumber) {
+    @JsonCreator
+    public PhoneNumber(@JsonProperty("phoneNumber") String phoneNumber) {
         if (!isValidPhoneNumber(phoneNumber))
             throw new IllegalArgumentException("Cannot create phone number, invalid format");
         this.phoneNumber = phoneNumber;

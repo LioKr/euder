@@ -1,9 +1,7 @@
 package com.switchfully.euder.api.controllers;
 
-import com.switchfully.euder.service.CustomerService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
@@ -20,4 +18,6 @@ public class ExceptionHandlerController extends ResponseEntityExceptionHandler {
         LOGGER.warn(exception.getMessage(), exception);
         response.sendError(HttpServletResponse.SC_BAD_REQUEST, exception.getMessage());
     }
+
+
 }

@@ -11,7 +11,7 @@ public class Customer {
     private final PhoneNumber phoneNumber;
 
     public Customer(String firstname, String lastname, Email email, Address address, PhoneNumber phoneNumber) {
-        if(!isValidCustomer(firstname, lastname, email, address, phoneNumber)){
+        if (!isValidCustomer(firstname, lastname, email, address, phoneNumber)) {
             throw new IllegalArgumentException("Cannot create Customer, illegal argument provided.");
         }
         this.id = UUID.randomUUID();
@@ -24,7 +24,7 @@ public class Customer {
 
     private boolean isValidCustomer(String firstname, String lastname, Email email, Address address, PhoneNumber phoneNumber) {
         return firstname != null
-                &&lastname !=null
+                && lastname != null
                 && email != null
                 && address != null
                 && phoneNumber != null;
