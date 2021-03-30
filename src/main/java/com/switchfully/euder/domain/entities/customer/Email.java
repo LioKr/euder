@@ -11,7 +11,7 @@ public final class Email {
     @JsonCreator
     public Email(@JsonProperty("mailAddress") String mailAddress) {
         if (!mailAddress.matches(EMAIL_FORMAT)) {
-            throw new IllegalArgumentException("Cannot accept provided mail address, invalid format");
+            throw new IllegalArgumentException("Cannot create Email, invalid format provided");
         }
         this.mailAddress = mailAddress;
     }

@@ -12,7 +12,7 @@ public final class PhoneNumber {
     @JsonCreator
     public PhoneNumber(@JsonProperty("phoneNumber") String phoneNumber) {
         if (!isValidPhoneNumber(phoneNumber))
-            throw new IllegalArgumentException("Cannot create phone number, invalid format");
+            throw new IllegalArgumentException("Cannot create PhoneNumber, invalid format");
         this.phoneNumber = phoneNumber;
     }
 

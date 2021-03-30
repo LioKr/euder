@@ -12,7 +12,7 @@ public final class Address {
     @JsonCreator
     public Address(@JsonProperty("streetName") String streetName, @JsonProperty("streetNumber") String streetNumber, @JsonProperty("postCode") String postCode, @JsonProperty("city") String city) {
         if (!isValidAddress(streetName, streetNumber, postCode, city))
-            throw new IllegalArgumentException("Cannot create address, one of the value is null");
+            throw new IllegalArgumentException("Cannot create Address, one of the value is null");
         this.streetName = streetName;
         this.streetNumber = streetNumber;
         this.postCode = postCode;
