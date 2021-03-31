@@ -1,5 +1,7 @@
 package com.switchfully.euder.api.dtos;
 
+import com.switchfully.euder.api.dtos.ItemGroup.ItemGroupDtoIdBased;
+
 import java.util.List;
 import java.util.UUID;
 

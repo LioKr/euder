@@ -51,4 +51,10 @@ public class ExceptionHandlerController extends ResponseEntityExceptionHandler {
         response.sendError(HttpServletResponse.SC_BAD_REQUEST, exception.getMessage());
     }
 
+    @ExceptionHandler(UserNotFoundException.class)
+    public void handleUserNotFoundException(UserNotFoundException exception, HttpServletResponse response) throws IOException {
+        LOGGER.warn(exception.getMessage(), exception);
+        response.sendError(HttpServletResponse.SC_BAD_REQUEST, exception.getMessage());
+    }
+
 }
