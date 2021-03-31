@@ -12,8 +12,8 @@ public class OrderDtoCreate {
         return this;
     }
 
-    public OrderDtoCreate setOrderingCustomer(UUID orderingCustomer) {
-        this.orderingCustomerId = orderingCustomer;
+    public OrderDtoCreate setOrderingCustomerId(UUID orderingCustomerId) {
+        this.orderingCustomerId = orderingCustomerId;
         return this;
     }
 
@@ -21,7 +21,7 @@ public class OrderDtoCreate {
         return itemGroupList;
     }
 
-    public UUID getOrderingCustomer() {
+    public UUID getOrderingCustomerId() {
         return orderingCustomerId;
     }
 }

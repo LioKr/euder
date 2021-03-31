@@ -24,7 +24,7 @@ public class OrderMapper {
             throw new IllegalArgumentException("Cannot create Order entity, null argument provided.");
         return new Order(
                 itemGroupMapper.toEntity(orderDtoCreate.getItemGroupList()),
-                orderDtoCreate.getOrderingCustomer());
+                orderDtoCreate.getOrderingCustomerId());
     }
 
     public OrderDto toDto(Order order) {

@@ -31,6 +31,12 @@ public class ItemGroupMapper {
                 itemGroupDtoIdBased.getAmountOrdered());
     }
 
+    public List<ItemGroup> toEntity(List<ItemGroupDtoIdBased> itemGroupList) {
+        return itemGroupList.stream()
+                .map(this::toEntity)
+                .collect(Collectors.toList());
+    }
+
     public ItemGroupDto toDto(ItemGroup itemGroup) {
         LOGGER.info("Returning ItemGroupDto based on ItemGroup entity");
         if (itemGroup == null)
@@ -40,9 +46,4 @@ public class ItemGroupMapper {
                 .setAmountOrdered(itemGroup.getAmountOrdered());
     }
 
-    public List<ItemGroup> toEntity(List<ItemGroupDtoIdBased> itemGroupList) {
-        return itemGroupList.stream()
-                .map(this::toEntity)
-                .collect(Collectors.toList());
-    }
 }
