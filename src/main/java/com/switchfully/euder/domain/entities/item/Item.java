@@ -15,7 +15,7 @@ public class Item {
     private int amountInStock;
 
     public Item(String name, String description, PriceInEuros priceInEuros, int amountInStock) {
-        if (!isNullInput(name, description, priceInEuros))
+        if (!isNotNullInput(name, description, priceInEuros))
             throw new IllegalArgumentException("Cannot create Item, illegal argument provided.");
         this.id = UUID.randomUUID();
         this.name = validName(name);
@@ -24,7 +24,8 @@ public class Item {
         this.amountInStock = validAmountInStock(amountInStock);
     }
 
-    private boolean isNullInput(String name, String description, PriceInEuros priceInEuros) {
+    //<editor-fold desc="Input validation">
+    private boolean isNotNullInput(String name, String description, PriceInEuros priceInEuros) {
         return name != null
                 && description != null
                 && priceInEuros != null;
@@ -45,8 +46,8 @@ public class Item {
     }
 
     private PriceInEuros validPrice(PriceInEuros priceInEuros) {
-        if (priceInEuros.getPrice() <= 0.0) {
-            throw new InvalidItemPriceException("Cannot create Price for Item, illegal argument provided: " + priceInEuros.getPrice());
+        if (priceInEuros.getPriceValue() <= 0.0) {
+            throw new InvalidItemPriceException("Cannot create Price for Item, illegal argument provided: " + priceInEuros.getPriceValue());
         }
         return priceInEuros;
     }
@@ -57,7 +58,9 @@ public class Item {
         }
         return amountInStock;
     }
+    //</editor-fold>
 
+    //<editor-fold desc="Getter">
     public UUID getId() {
         return id;
     }
@@ -77,4 +80,5 @@ public class Item {
     public int getAmountInStock() {
         return amountInStock;
     }
+    //</editor-fold>
 }
