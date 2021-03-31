@@ -6,9 +6,9 @@ public class User {
     private final UUID id;
     private final String firstname;
     private final String lastname;
-    private final Email email;  //TODO add unique Email validation
+    private final Email email;
     private final Address address;
-    private final PhoneNumber phoneNumber; //TODO add unique phoneNumber validation
+    private final PhoneNumber phoneNumber;
     private final Role role;
 
     public User(String firstname, String lastname, Email email, Address address, PhoneNumber phoneNumber, Role role) {

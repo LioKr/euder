@@ -12,7 +12,7 @@ public final class PriceInEuros {
     @JsonCreator
     public PriceInEuros(@JsonProperty("priceValue") double priceValue) {
         this.priceValue = priceValue;
-    }
+    }//Question when i put my validation here it's not going to the ExceptionHandlerController
 
     public static String getCURRENCY() {
         return CURRENCY;

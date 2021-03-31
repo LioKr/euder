@@ -5,10 +5,7 @@ import com.switchfully.euder.domain.entities.user.User;
 import com.switchfully.euder.infrastructure.exceptions.UserNotFoundException;
 import org.springframework.stereotype.Component;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.UUID;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @Component
@@ -29,5 +26,9 @@ public class UserDb {
     public User getOneCustomerById(UUID uuid) {
         if (!customers.containsKey(uuid)) throw new UserNotFoundException("Cannot find User with Id matching: " + uuid);
         return customers.get(uuid);
+    }
+
+    public List<User> getAllUser() {
+        return new ArrayList<>(customers.values());
     }
 }
