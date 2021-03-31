@@ -25,8 +25,7 @@ public class ItemService {
     }
 
     public Item getOneById(UUID itemId) {
-        //TODO getOneById in ItemService has not been implemented yet
-        throw new UnsupportedOperationException("getOneById in ItemService has not been implemented yet");
-        //return null;
+        LOGGER.info("Getting one Item based on Id");
+        return itemRepository.getOneById(itemId);
     }
 }

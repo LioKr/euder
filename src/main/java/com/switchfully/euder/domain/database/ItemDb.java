@@ -15,4 +15,10 @@ public class ItemDb {
         items.put(newItem.getId(), newItem);
         return items.get(newItem.getId());
     }
+
+    public Item getOneById(UUID itemId) {
+        if (!items.containsKey(itemId))
+            throw new IllegalArgumentException("Cannot perform operation: getOneById, cannot find Item with matching Id.");
+        return items.get(itemId);
+    }
 }
