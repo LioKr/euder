@@ -1201,3 +1201,20 @@ com.switchfully.euder.infrastructure.exceptions.UserNotFoundException: Cannot fi
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
 	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
 
+2021-03-31 17:12:58.205  INFO 7852 --- [main] c.s.euder.EuderApplicationTests          : Starting EuderApplicationTests using Java 15.0.2 on FIN-32L9TT2 with PID 7852 (started by lkrebs in C:\_development\switchfullyPractice\euder)
+2021-03-31 17:12:58.209 DEBUG 7852 --- [main] c.s.euder.EuderApplicationTests          : Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-31 17:12:58.214  INFO 7852 --- [main] c.s.euder.EuderApplicationTests          : No active profile set, falling back to default profiles: default
+2021-03-31 17:13:00.499  INFO 7852 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-31 17:13:02.037  INFO 7852 --- [main] c.s.euder.EuderApplicationTests          : Started EuderApplicationTests in 4.55 seconds (JVM running for 6.449)
+2021-03-31 17:13:02.618  INFO 7852 --- [main] c.switchfully.euder.service.ItemService  : Inserting one Item
+2021-03-31 17:13:02.782  INFO 7852 --- [main] c.s.euder.service.OrderService           : Inserting one Order
+2021-03-31 17:13:02.827  INFO 7852 --- [main] c.switchfully.euder.service.UserService  : Inserting one User
+2021-03-31 17:13:02.833  INFO 7852 --- [main] c.switchfully.euder.service.UserService  : Inserting one User
+2021-03-31 17:13:02.833  INFO 7852 --- [main] c.switchfully.euder.service.UserService  : Getting one Customer based on Id
+2021-03-31 17:13:02.834  INFO 7852 --- [main] c.switchfully.euder.service.UserService  : Getting one Customer based on Id
+2021-03-31 17:13:02.845  INFO 7852 --- [main] c.switchfully.euder.service.UserService  : Inserting one User
+2021-03-31 17:13:02.869  INFO 7852 --- [main] c.switchfully.euder.service.UserService  : Getting one Customer based on Id
+2021-03-31 17:13:02.884  INFO 7852 --- [main] c.switchfully.euder.service.UserService  : Inserting one User
+2021-03-31 17:13:02.886  INFO 7852 --- [main] c.switchfully.euder.service.UserService  : Inserting one User
+2021-03-31 17:13:02.887  INFO 7852 --- [main] c.switchfully.euder.service.UserService  : Getting all the User that are Customer
+2021-03-31 17:13:03.009  INFO 7852 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
