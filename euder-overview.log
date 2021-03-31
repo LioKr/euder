@@ -1201,3 +1201,62 @@ com.switchfully.euder.infrastructure.exceptions.UserNotFoundException: Cannot fi
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
 	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
 
+2021-03-31 16:30:24.980  INFO 6496 --- [http-nio-8080-exec-8] c.s.e.api.controllers.UserController     : Creating a Customer
+2021-03-31 16:30:24.980  INFO 6496 --- [http-nio-8080-exec-8] c.s.euder.api.mappers.CustomerMapper     : Returning Customer entity based on CustomerDtoCreate
+2021-03-31 16:30:24.981  INFO 6496 --- [http-nio-8080-exec-8] c.s.e.api.controllers.UserController     : Inserting a new Customer with UUID fc48255f-9173-499b-ba86-47952940a614
+2021-03-31 16:30:24.981  INFO 6496 --- [http-nio-8080-exec-8] c.switchfully.euder.service.UserService  : Inserting one User
+2021-03-31 16:30:24.981  INFO 6496 --- [http-nio-8080-exec-8] c.s.euder.api.mappers.CustomerMapper     : Returning CustomerDtoCreate based on Customer entity
+2021-03-31 16:53:23.584  INFO 6496 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-31 16:53:31.989  INFO 7796 --- [main] com.switchfully.euder.EuderApplication   : Starting EuderApplication using Java 15.0.2 on FIN-32L9TT2 with PID 7796 (C:\_development\switchfullyPractice\euder\target\classes started by lkrebs in C:\_development\switchfullyPractice\euder)
+2021-03-31 16:53:31.993 DEBUG 7796 --- [main] com.switchfully.euder.EuderApplication   : Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-31 16:53:31.995  INFO 7796 --- [main] com.switchfully.euder.EuderApplication   : No active profile set, falling back to default profiles: default
+2021-03-31 16:53:33.812  INFO 7796 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-31 16:53:33.861  INFO 7796 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-31 16:53:33.862  INFO 7796 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-31 16:53:34.136  INFO 7796 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-31 16:53:34.136  INFO 7796 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2045 ms
+2021-03-31 16:53:34.433  INFO 7796 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-31 16:53:35.710  INFO 7796 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-31 16:53:35.722  INFO 7796 --- [main] com.switchfully.euder.EuderApplication   : Started EuderApplication in 4.573 seconds (JVM running for 6.175)
+2021-03-31 16:53:46.463  INFO 7796 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-31 16:53:46.463  INFO 7796 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-03-31 16:53:46.471  INFO 7796 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2021-03-31 16:54:39.669  INFO 7796 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-31 16:54:46.964  INFO 784 --- [main] com.switchfully.euder.EuderApplication   : Starting EuderApplication using Java 15.0.2 on FIN-32L9TT2 with PID 784 (C:\_development\switchfullyPractice\euder\target\classes started by lkrebs in C:\_development\switchfullyPractice\euder)
+2021-03-31 16:54:46.969 DEBUG 784 --- [main] com.switchfully.euder.EuderApplication   : Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-31 16:54:46.970  INFO 784 --- [main] com.switchfully.euder.EuderApplication   : No active profile set, falling back to default profiles: default
+2021-03-31 16:54:48.281  INFO 784 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-31 16:54:48.295  INFO 784 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-31 16:54:48.295  INFO 784 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-31 16:54:48.407  INFO 784 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-31 16:54:48.408  INFO 784 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1348 ms
+2021-03-31 16:54:48.719  INFO 784 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-31 16:54:49.531  INFO 784 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-31 16:54:49.544  INFO 784 --- [main] com.switchfully.euder.EuderApplication   : Started EuderApplication in 3.381 seconds (JVM running for 4.953)
+2021-03-31 16:54:52.096  INFO 784 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-31 16:54:52.097  INFO 784 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-03-31 16:54:52.098  INFO 784 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-03-31 16:54:52.507  INFO 784 --- [http-nio-8080-exec-1] c.s.e.api.controllers.UserController     : Creating a Customer
+2021-03-31 16:54:52.507  INFO 784 --- [http-nio-8080-exec-1] c.s.euder.api.mappers.CustomerMapper     : Returning Customer entity based on CustomerDtoCreate
+2021-03-31 16:54:52.508  INFO 784 --- [http-nio-8080-exec-1] c.s.e.api.controllers.UserController     : Inserting a new Customer with UUID a8480998-d7b3-4608-a8ba-26ac12b5aebc
+2021-03-31 16:54:52.509  INFO 784 --- [http-nio-8080-exec-1] c.switchfully.euder.service.UserService  : Inserting one User
+2021-03-31 16:54:52.509  INFO 784 --- [http-nio-8080-exec-1] c.s.euder.api.mappers.CustomerMapper     : Returning CustomerDtoCreate based on Customer entity
+2021-03-31 17:03:18.453  INFO 784 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-31 17:03:24.213  INFO 1580 --- [main] com.switchfully.euder.EuderApplication   : Starting EuderApplication using Java 15.0.2 on FIN-32L9TT2 with PID 1580 (C:\_development\switchfullyPractice\euder\target\classes started by lkrebs in C:\_development\switchfullyPractice\euder)
+2021-03-31 17:03:24.217 DEBUG 1580 --- [main] com.switchfully.euder.EuderApplication   : Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-31 17:03:24.217  INFO 1580 --- [main] com.switchfully.euder.EuderApplication   : No active profile set, falling back to default profiles: default
+2021-03-31 17:03:25.574  INFO 1580 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-31 17:03:25.587  INFO 1580 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-31 17:03:25.591  INFO 1580 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-31 17:03:25.665  INFO 1580 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-31 17:03:25.665  INFO 1580 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1376 ms
+2021-03-31 17:03:25.931  INFO 1580 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-31 17:03:26.592  INFO 1580 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-31 17:03:26.603  INFO 1580 --- [main] com.switchfully.euder.EuderApplication   : Started EuderApplication in 3.0 seconds (JVM running for 4.374)
+2021-03-31 17:04:09.881  INFO 9160 --- [main] c.s.euder.EuderApplicationTests          : Starting EuderApplicationTests using Java 15.0.2 on FIN-32L9TT2 with PID 9160 (started by lkrebs in C:\_development\switchfullyPractice\euder)
+2021-03-31 17:04:09.882 DEBUG 9160 --- [main] c.s.euder.EuderApplicationTests          : Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-31 17:04:09.886  INFO 9160 --- [main] c.s.euder.EuderApplicationTests          : No active profile set, falling back to default profiles: default
+2021-03-31 17:04:11.423  INFO 9160 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-31 17:04:12.461  INFO 9160 --- [main] c.s.euder.EuderApplicationTests          : Started EuderApplicationTests in 3.144 seconds (JVM running for 4.509)
+2021-03-31 17:04:13.101  INFO 9160 --- [main] c.switchfully.euder.service.ItemService  : Inserting one Item
+2021-03-31 17:04:13.550  INFO 9160 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
