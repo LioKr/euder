@@ -1,7 +1,6 @@
 package com.switchfully.euder.domain.entities.order;
 
 import com.switchfully.euder.domain.entities.item.PriceInEuros;
-import com.switchfully.euder.domain.entities.user.User;
 import com.switchfully.euder.infrastructure.utils.InputValidator;
 
 import java.time.LocalDate;
@@ -14,17 +13,17 @@ public class Order {
     public static final int DAYS_TO_SHIP_WITH_STOCK = 1;
     private final UUID id;
     private final List<ItemGroup> itemGroupList;
-    private final User orderingCustomer;
+    private final UUID orderingCustomerId;
     private final PriceInEuros price;
     private final LocalDate shippingDate;
 
-    public Order(List<ItemGroup> itemGroupList, User orderingCustomer) {
-        if (InputValidator.isNull(itemGroupList) || InputValidator.isNull(orderingCustomer)) {
-            throw new IllegalArgumentException("Cannot perform operation: create Order, illegal argument provided: " + itemGroupList + " or " + orderingCustomer);
+    public Order(List<ItemGroup> itemGroupList, UUID orderingCustomerId) {
+        if (InputValidator.isNull(itemGroupList) || InputValidator.isNull(orderingCustomerId)) {
+            throw new IllegalArgumentException("Cannot perform operation: create Order, illegal argument provided: " + itemGroupList + " or " + orderingCustomerId);
         }
         this.id = UUID.randomUUID();
         this.itemGroupList = itemGroupList;
-        this.orderingCustomer = orderingCustomer;
+        this.orderingCustomerId = orderingCustomerId;
         this.price = calculatePrice();
         this.shippingDate = calculateShippingDate(itemGroupList);
     }
@@ -56,8 +55,8 @@ public class Order {
         return itemGroupList;
     }
 
-    public User getOrderingCustomer() {
-        return orderingCustomer;
+    public UUID getOrderingCustomerId() {
+        return orderingCustomerId;
     }
 
     public PriceInEuros getPrice() {

@@ -42,7 +42,7 @@ class OrderServiceTest {
         this.itemGroup3 = new ItemGroup(item3, 5);
         this.itemGroupList = new ArrayList<>(List.of(itemGroup1, itemGroup2, itemGroup3));
         this.customer = new User("firstname1", "lastname1", new Email("mail@gmail.com"), new Address("a", "a", "a", "a"), new PhoneNumber("0032456000000"), Role.CUSTOMER);
-        this.order1 = new Order(itemGroupList, customer);
+        this.order1 = new Order(itemGroupList, customer.getId());
     }
 
     @Test
@@ -65,13 +65,13 @@ class OrderServiceTest {
 
     @Test
     void createOrder_givenCorrectParameterWithSufficientStock_thenReturnNewOrderWithCorrectShippingDate() {
-        LocalDate actualResult = new Order(List.of(itemGroup1, itemGroup2), customer).getShippingDate();
+        LocalDate actualResult = new Order(List.of(itemGroup1, itemGroup2), customer.getId()).getShippingDate();
         assertThat(actualResult.equals(LocalDate.now().plusDays(Order.DAYS_TO_SHIP_WITH_STOCK)));
     }
 
     @Test
     void createOrder_givenNullItemGroupListParameter_thenThrowIllegalArgumentException() {
-        IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> orderService.createOrder(new Order(null, customer)));
+        IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> orderService.createOrder(new Order(null, customer.getId())));
         assertTrue(exception.getMessage().contains("Cannot perform operation: create Order"));
     }
 

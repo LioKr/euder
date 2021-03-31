@@ -7,6 +7,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.util.UUID;
+
 @Component
 public class ItemService {
     private static final Logger LOGGER = LoggerFactory.getLogger(ItemService.class);
@@ -20,5 +22,11 @@ public class ItemService {
     public Item createItem(Item item) {
         LOGGER.info("Inserting one Item");
         return itemRepository.createItem(item);
+    }
+
+    public Item getOneById(UUID itemId) {
+        //TODO getOneById in ItemService has not been implemented yet
+        throw new UnsupportedOperationException("getOneById in ItemService has not been implemented yet");
+        //return null;
     }
 }

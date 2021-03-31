@@ -2,20 +2,19 @@ package com.switchfully.euder.api.dtos;
 
 import com.switchfully.euder.domain.entities.item.PriceInEuros;
 import com.switchfully.euder.domain.entities.order.ItemGroup;
-import com.switchfully.euder.domain.entities.user.User;
 
 import java.time.LocalDate;
 import java.util.List;
 import java.util.UUID;
 
 public class OrderDto {
-    private UUID id;
+    private java.util.UUID id;
     private List<ItemGroup> itemGroupList;
-    private User orderingCustomer;
+    private UUID orderingCustomer;
     private PriceInEuros price;
     private LocalDate shippingDate;
 
-    public OrderDto setId(UUID id) {
+    public OrderDto setId(java.util.UUID id) {
         this.id = id;
         return this;
     }
@@ -25,7 +24,7 @@ public class OrderDto {
         return this;
     }
 
-    public OrderDto setOrderingCustomer(User orderingCustomer) {
+    public OrderDto setOrderingCustomer(UUID orderingCustomer) {
         this.orderingCustomer = orderingCustomer;
         return this;
     }
@@ -40,7 +39,7 @@ public class OrderDto {
         return this;
     }
 
-    public UUID getId() {
+    public java.util.UUID getId() {
         return id;
     }
 
@@ -48,7 +47,7 @@ public class OrderDto {
         return itemGroupList;
     }
 
-    public User getOrderingCustomer() {
+    public UUID getOrderingCustomer() {
         return orderingCustomer;
     }
 

@@ -18,6 +18,7 @@ public class OrderService {
     }
 
     public Order createOrder(Order order) {
+    //TODO check if User exists
         LOGGER.info("Inserting one Order");
         return orderRepository.createOrder(order);
     }

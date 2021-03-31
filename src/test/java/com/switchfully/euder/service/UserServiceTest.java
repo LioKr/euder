@@ -7,8 +7,6 @@ import com.switchfully.euder.infrastructure.exceptions.InvalidMailException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import java.util.UUID;
-
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -19,7 +17,7 @@ class UserServiceTest {
     private PhoneNumber phoneNumber1;
     private Address address1;
     private User user1;
-    private UUID id1;
+    private java.util.UUID id1;
 
     @BeforeEach
     void init() {

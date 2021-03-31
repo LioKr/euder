@@ -5,11 +5,10 @@ import org.springframework.stereotype.Component;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.UUID;
 
 @Component
 public class UserDb {
-    private final Map<UUID, User> customers = new HashMap<>();
+    private final Map<java.util.UUID, User> customers = new HashMap<>();
 
     public User createUser(User newUser) {
         customers.put(newUser.getId(), newUser);
