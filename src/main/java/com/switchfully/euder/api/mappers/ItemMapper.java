@@ -22,7 +22,7 @@ public class ItemMapper {
 
     public ItemDtoCreate toDto(Item item) {
         LOGGER.info("Returning ItemDtoCreate based on Item entity");
-        if (item == null) throw new IllegalArgumentException("Cannot create Item entity, null argument provided.");
+        if (item == null) throw new IllegalArgumentException("Cannot create ItemDtoCreate, null argument provided.");
         return new ItemDtoCreate()
                 .setName(item.getName())
                 .setDescription(item.getDescription())
