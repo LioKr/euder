@@ -3,7 +3,6 @@ package com.switchfully.euder.api.dtos;
 import com.switchfully.euder.domain.entities.item.PriceInEuros;
 
 public class ItemDtoCreate {
-
     private String name;
     private String description;
     private PriceInEuros priceInEuros;

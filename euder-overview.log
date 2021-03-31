@@ -1203,3 +1203,8 @@ com.switchfully.euder.infrastructure.exceptions.InvalidItemPriceException: Canno
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
 	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
 
+2021-03-30 17:38:15.607  INFO 10840 --- [http-nio-8080-exec-10] c.s.e.api.controllers.ItemController     : Creating an Item
+2021-03-30 17:38:15.608  INFO 10840 --- [http-nio-8080-exec-10] c.s.euder.api.mappers.ItemMapper         : Returning Item entity based on ItemDtoCreate
+2021-03-30 17:38:15.610  INFO 10840 --- [http-nio-8080-exec-10] c.s.e.api.controllers.ItemController     : Inserting a new Item with UUID 742ae3e8-857e-40be-9f5f-fc6cf293d069
+2021-03-30 17:38:15.610  INFO 10840 --- [http-nio-8080-exec-10] c.switchfully.euder.service.ItemService  : Inserting one Item
+2021-03-30 17:38:15.610  INFO 10840 --- [http-nio-8080-exec-10] c.s.euder.api.mappers.ItemMapper         : Returning ItemDtoCreate based on Item entity
