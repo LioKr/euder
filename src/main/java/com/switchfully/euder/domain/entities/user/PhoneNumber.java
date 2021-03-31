@@ -12,7 +12,8 @@ public final class PhoneNumber {
         if (!isValidPhoneNumber(phoneNumber))
             throw new IllegalArgumentException("Cannot create PhoneNumber, invalid format");
         this.phoneNumber = phoneNumber;
-    }
+    }//Question when i put my validation here it's not going to the ExceptionHandlerController
+
 
     static boolean isValidPhoneNumber(String phoneNumber) {
         if (phoneNumber == null) {
