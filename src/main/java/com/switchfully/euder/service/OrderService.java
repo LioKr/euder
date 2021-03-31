@@ -12,13 +12,13 @@ public class OrderService {
     private static final Logger LOGGER = LoggerFactory.getLogger(OrderService.class);
     private final OrderRepository orderRepository;
 
+
     @Autowired
     public OrderService(OrderRepository orderRepository) {
         this.orderRepository = orderRepository;
     }
 
     public Order createOrder(Order order) {
-    //TODO check if User exists
         LOGGER.info("Inserting one Order");
         return orderRepository.createOrder(order);
     }

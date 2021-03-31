@@ -25,7 +25,7 @@ public class OrderController {
         this.orderMapper = orderMapper;
     }
 
-    //TODO add User access restrictions
+    //TODO add User access restrictions, validate that user exists
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseStatus(HttpStatus.CREATED)
     public OrderDto createOrder(@RequestBody OrderDtoCreate orderDtoCreate) {
