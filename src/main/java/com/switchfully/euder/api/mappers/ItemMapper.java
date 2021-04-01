@@ -1,6 +1,7 @@
 package com.switchfully.euder.api.mappers;
 
-import com.switchfully.euder.api.dtos.ItemDtoCreate;
+import com.switchfully.euder.api.dtos.item.ItemDtoCreate;
+import com.switchfully.euder.api.dtos.item.ItemDtoUpdate;
 import com.switchfully.euder.domain.entities.item.Item;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -28,5 +29,15 @@ public class ItemMapper {
                 .setDescription(item.getDescription())
                 .setPriceInEuros(item.getPriceInEuros())
                 .setAmountInStock(item.getAmountInStock());
+    }
+
+    public Item toEntity(ItemDtoUpdate itemDtoUpdate) {
+        LOGGER.info("Returning Item entity based on ItemDtoUpdate");
+        if (itemDtoUpdate == null)
+            throw new IllegalArgumentException("Cannot create Item entity, null argument provided.");
+        return new Item(itemDtoUpdate.getName(),
+                itemDtoUpdate.getDescription(),
+                itemDtoUpdate.getPriceInEuros(),
+                itemDtoUpdate.getAmountInStock());
     }
 }

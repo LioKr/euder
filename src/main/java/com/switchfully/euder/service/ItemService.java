@@ -1,5 +1,6 @@
 package com.switchfully.euder.service;
 
+import com.switchfully.euder.api.dtos.item.ItemDto;
 import com.switchfully.euder.domain.entities.item.Item;
 import com.switchfully.euder.domain.repositories.ItemRepository;
 import org.slf4j.Logger;
@@ -25,7 +26,12 @@ public class ItemService {
     }
 
     public Item getOneById(UUID itemId) {
-        LOGGER.info("Getting one Item based on Id");
+        LOGGER.info("Getting one Item based on Id: " + itemId);
         return itemRepository.getOneById(itemId);
+    }
+
+    public ItemDto updateMovie(Item itemToUpdate, String itemId) {
+        LOGGER.info("Updating an Item with Id: " + itemId);
+        throw new UnsupportedOperationException();
     }
 }

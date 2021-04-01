@@ -1,31 +1,43 @@
-package com.switchfully.euder.api.dtos;
+package com.switchfully.euder.api.dtos.item;
 
 import com.switchfully.euder.domain.entities.item.PriceInEuros;
 
-public class ItemDtoCreate {
+import java.util.UUID;
+
+public class ItemDto {
+    private UUID id;
     private String name;
     private String description;
     private PriceInEuros priceInEuros;
     private int amountInStock;
 
-    public ItemDtoCreate setName(String name) {
+    public ItemDto setId(UUID id) {
+        this.id = id;
+        return this;
+    }
+
+    public ItemDto setName(String name) {
         this.name = name;
         return this;
     }
 
-    public ItemDtoCreate setDescription(String description) {
+    public ItemDto setDescription(String description) {
         this.description = description;
         return this;
     }
 
-    public ItemDtoCreate setPriceInEuros(PriceInEuros priceInEuros) {
+    public ItemDto setPriceInEuros(PriceInEuros priceInEuros) {
         this.priceInEuros = priceInEuros;
         return this;
     }
 
-    public ItemDtoCreate setAmountInStock(int amountInStock) {
+    public ItemDto setAmountInStock(int amountInStock) {
         this.amountInStock = amountInStock;
         return this;
+    }
+
+    public UUID getId() {
+        return id;
     }
 
     public String getName() {

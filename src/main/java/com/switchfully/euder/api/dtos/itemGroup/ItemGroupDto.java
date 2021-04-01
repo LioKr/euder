@@ -1,4 +1,4 @@
-package com.switchfully.euder.api.dtos.ItemGroup;
+package com.switchfully.euder.api.dtos.itemGroup;
 
 import com.switchfully.euder.domain.entities.item.Item;
 

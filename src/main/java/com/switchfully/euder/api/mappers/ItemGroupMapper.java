@@ -1,7 +1,7 @@
 package com.switchfully.euder.api.mappers;
 
-import com.switchfully.euder.api.dtos.ItemGroup.ItemGroupDto;
-import com.switchfully.euder.api.dtos.ItemGroup.ItemGroupDtoIdBased;
+import com.switchfully.euder.api.dtos.itemGroup.ItemGroupDto;
+import com.switchfully.euder.api.dtos.itemGroup.ItemGroupDtoIdBased;
 import com.switchfully.euder.domain.entities.order.ItemGroup;
 import com.switchfully.euder.service.ItemService;
 import org.slf4j.Logger;

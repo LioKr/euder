@@ -1,6 +1,8 @@
 package com.switchfully.euder.api.controllers;
 
-import com.switchfully.euder.api.dtos.ItemDtoCreate;
+import com.switchfully.euder.api.dtos.item.ItemDto;
+import com.switchfully.euder.api.dtos.item.ItemDtoCreate;
+import com.switchfully.euder.api.dtos.item.ItemDtoUpdate;
 import com.switchfully.euder.api.mappers.ItemMapper;
 import com.switchfully.euder.domain.entities.item.Item;
 import com.switchfully.euder.service.ItemService;
@@ -32,5 +34,13 @@ public class ItemController {
         Item itemToInsert = itemMapper.toEntity(itemDtoCreate);
         LOGGER.info("Inserting a new Item with UUID " + itemToInsert.getId());
         return itemMapper.toDto(itemService.createItem(itemToInsert));
+    }
+
+    @PutMapping(path = ("/{id}"), consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+    @ResponseStatus(HttpStatus.ACCEPTED)
+    public ItemDto updateItem(@RequestBody ItemDtoUpdate itemDtoUpdate, @PathVariable("id") String id) {
+        Item itemToUpdate = itemMapper.toEntity(itemDtoUpdate);
+        LOGGER.info("Updating an Item with id: " + id);
+        return itemService.updateMovie(itemToUpdate, id);
     }
 }
