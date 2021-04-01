@@ -28,4 +28,8 @@ public class UserRepository {
     public User getOneCustomerById(UUID uuid) {
         return userDb.getOneCustomerById(uuid);
     }
+
+    public List<User> getAllUser() {
+        return userDb.getAllUser();
+    }
 }

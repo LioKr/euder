@@ -30,6 +30,11 @@ public class UserService {
         return userRepository.getAllCustomer();
     }
 
+    public List<User> getAllUser() {
+        LOGGER.info("Getting all the User");
+        return userRepository.getAllUser();
+    }
+
     public User getOneCustomerById(UUID uuid) {
         LOGGER.info("Getting one Customer based on Id");
         return userRepository.getOneCustomerById(uuid);
